@@ -1,4 +1,7 @@
-const Contact = require("./contact");
+const Contact = require("./contact"); 
+const AddressBook = require("./addressbook");
+
+let addressbook = new AddressBook();
 
 let contact1 = new Contact(
     "Adarsh",
@@ -22,5 +25,7 @@ let contact2 = new Contact(
     "udaykourav@example.com"
 );
 
-console.log("Contact1: ", contact1);
-console.log("Contact2: ", contact2);
+addressbook.addContacts(contact1);
+addressbook.addContacts(contact2);
+
+console.log("All contacts: \n", addressbook.displayContacts());
