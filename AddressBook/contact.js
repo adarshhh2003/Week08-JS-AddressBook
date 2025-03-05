@@ -50,4 +50,4 @@ class Contact {
     }
 }
 
-module.exports = Contact; // Correctly export the class
+module.exports = Contact;
