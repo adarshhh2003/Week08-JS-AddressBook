@@ -28,4 +28,11 @@ let contact2 = new Contact(
 addressbook.addContacts(contact1);
 addressbook.addContacts(contact2);
 
+addressbook.editDetails("Uday", "Kourav", {
+    firstName: "Sanket",
+    lastName: "Patel",
+    phoneNumber: "8435216790",
+    email: "sanketpatel@gmail.com",
+});
+
 console.log("All contacts: \n", addressbook.displayContacts());
